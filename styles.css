@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem;
+    background: #0078D7;
+    color: white;
+}
+
+.cta-button {
+    background: #005bb5;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#services, #portfolio, #contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
