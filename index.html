@@ -3,52 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freelancer - Mariana Cruvinel</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mariana Web Solutions - Freelancer</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?technology,design') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #0056b3;
+
+        }
+
+        .hero a {
+            background: #ffc107;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+
+        .services, .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <header class="hero">
-        <h1>Criação de Sites Profissionais</h1>
-        <p>Transforme seu negócio com um site incrível e acessível.</p>
-        <a href="#contact" class="cta-button">Solicitar um Orçamento</a>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Mariana Web Solutions</h1>
+        <nav>
+            <a href="#services">Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contact">Contato</a>
+        </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Sites Profissionais e Soluções Digitais Sob Medida</h2>
+        <p>Transforme seu negócio com sites modernos, responsivos e interativos.</p>
+        <a href="#contact">Solicitar Orçamento</a>
+    </section>
+
+    <!-- Serviços -->
     <section id="services">
         <h2>Meus Serviços</h2>
-        <div class="service">
-            <h3>Sites Responsivos</h3>
-            <p>Sites que funcionam em qualquer dispositivo.</p>
-        </div>
-        <div class="service">
-            <h3>Design Personalizado</h3>
-            <p>Criação de layouts exclusivos para o seu negócio.</p>
-        </div>
-        <div class="service">
-            <h3>Manutenção de Sites</h3>
-            <p>Atualização e suporte técnico para seu site.</p>
+        <div class="services">
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?website" alt="Criação de Websites">
+                <h3>Criação de Websites</h3>
+                <p>Sites responsivos, rápidos e personalizados para o seu negócio.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?menu,restaurant" alt="Cardápios Interativos">
+                <h3>Cardápios Interativos</h3>
+                <p>Cardápios digitais para restaurantes, fáceis de usar e atrativos.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?ecommerce,shop" alt="Lojas Virtuais">
+                <h3>Lojas Virtuais</h3>
+                <p>Soluções completas para o seu e-commerce, com segurança e praticidade.</p>
+            </div>
         </div>
     </section>
+
+    <!-- Portfólio -->
     <section id="portfolio">
         <h2>Portfólio</h2>
-        <p>Veja alguns dos meus trabalhos:</p>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">Exemplo 1</div>
-            <div class="portfolio-item">Exemplo 2</div>
+        <div class="portfolio">
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?fashion,shop" alt="Loja de Moda">
+                <h3>Loja de Moda</h3>
+                <p>Site e loja virtual para uma marca de roupas modernas.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?food,menu" alt="Restaurante Gourmet">
+                <h3>Restaurante Gourmet</h3>
+                <p>Cardápio digital interativo para um restaurante de alta gastronomia.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?tech,company" alt="Empresa de Tecnologia">
+                <h3>Empresa de Tecnologia</h3>
+                <p>Site institucional para uma startup de inovação.</p>
+            </div>
         </div>
     </section>
+
+    <!-- Contato -->
     <section id="contact">
-        <h2>Contato</h2>
-        <form>
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <h2>Entre em Contato</h2>
+        <p>Envie uma mensagem e solicite um orçamento personalizado.</p>
+        <a href="mailto:marianaalmeidacruvinel98@gmail.com">marianaalmeidacruvinel98@gmail.com</a>
     </section>
+
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 Mariana Cruvinel. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Mariana Web Solutions. Todos os direitos reservados.</p>
+        <p>Feito por Mariana Cruvinel.</p>
     </footer>
 </body>
 </html>
